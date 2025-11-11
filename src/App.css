@@ -1,0 +1,88 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.toggle-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  min-width: 300px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.status {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 2rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.status.on {
+  color: #4CAF50;
+  background-color: #E8F5E8;
+  border: 3px solid #4CAF50;
+}
+
+.status.off {
+  color: #F44336;
+  background-color: #FFEBEE;
+  border: 3px solid #F44336;
+}
+
+.toggle-btn {
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 1rem 0;
+}
+
+.toggle-btn.on {
+  background-color: #F44336;
+  color: white;
+}
+
+.toggle-btn.off {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.toggle-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.indicator {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.light {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ccc;
+  transition: all 0.3s ease;
+}
+
+.light.active {
+  background-color: #4CAF50;
+  box-shadow: 0 0 10px #4CAF50;
+}
